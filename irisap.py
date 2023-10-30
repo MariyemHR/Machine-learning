@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 import pickle
 
 model = pickle.load(open('kmeans_model7.pkl', 'rb'))
