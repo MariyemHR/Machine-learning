@@ -1,4 +1,9 @@
 import streamlit as st
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
 import pickle
 
 with open('kmeans_model7.pkl', 'rb') as file:
