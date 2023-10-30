@@ -1,7 +1,8 @@
 import streamlit as st
 import pickle
 
-model = pickle.load(open('kmeans_model7.pkl', 'rb'))
+with open('kmeans_model7.pkl', 'rb') as file:
+    model = pickle.load(file, encoding='latin1')
 
 def main():
     st.title('Custmers group')
